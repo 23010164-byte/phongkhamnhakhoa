@@ -1,0 +1,42 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Body shifts right to accommodate sidebar */
+.main-layout__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--sidebar-width);
+  transition: margin-left var(--transition-slow);
+  min-width: 0;
+}
+
+.main-layout--collapsed .main-layout__body {
+  margin-left: var(--sidebar-collapsed);
+}
+
+/* Content area below header */
+.main-layout__content {
+  flex: 1;
+  margin-top: var(--header-height);
+  padding: var(--space-6);
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Page fade-in on route change */
+.main-layout__page {
+  animation: fadeInUp 0.25s ease;
+  max-width: var(--content-max-width);
+}
+
+@media (max-width: 768px) {
+  .main-layout__body {
+    margin-left: 0;
+  }
+
+  .main-layout__content {
+    padding: var(--space-4);
+  }
+}

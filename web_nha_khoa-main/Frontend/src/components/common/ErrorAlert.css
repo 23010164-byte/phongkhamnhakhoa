@@ -1,0 +1,35 @@
+.error-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin: 16px 0;
+}
+
+.error-alert__icon {
+  font-size: 1.1rem;
+}
+
+.error-alert__message {
+  flex: 1;
+}
+
+.error-alert__retry {
+  background: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.error-alert__retry:hover {
+  background: #991b1b;
+}

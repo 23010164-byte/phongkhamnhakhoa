@@ -1,0 +1,168 @@
+/* ============================================
+   GLOBAL CSS — Healthcare Portal
+   Design: Clean medical-grade, trustworthy
+============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Core Palette */
+  --color-bg:           #f5f6fa;
+  --color-surface:      #ffffff;
+  --color-surface-alt:  #f0f2f8;
+  --color-border:       #e2e6f0;
+  --color-border-light: #edf0f7;
+
+  /* Brand */
+  --color-primary:      #1a6bcc;
+  --color-primary-dark: #145aa8;
+  --color-primary-light:#e8f0fc;
+  --color-primary-muted:#6ba3e0;
+
+  --color-accent:       var(--color-primary);
+  --color-accent-hover: var(--color-primary-dark);
+  --color-accent-light: var(--color-primary-light);
+
+  /* Role Colors */
+  --color-admin:        #2d3a8c;
+  --color-admin-light:  #eaecf8;
+  --color-doctor:       #0f7c6e;
+  --color-doctor-light: #e6f4f2;
+  --color-receptionist: #7c3aed;
+  --color-receptionist-light: #f0ebfd;
+  --color-patient:      #1a6bcc;
+  --color-patient-light:#e8f0fc;
+
+  /* Semantic */
+  --color-success:      #10b981;
+  --color-success-light:#d1fae5;
+  --color-warning:      #f59e0b;
+  --color-warning-light:#fef3c7;
+  --color-danger:       #ef4444;
+  --color-danger-light: #fee2e2;
+  --color-info:         #3b82f6;
+  --color-info-light:   #dbeafe;
+
+  /* Text */
+  --color-text:         #1a1f36;
+  --color-text-muted:   #6b7280;
+  --color-text-light:   #9ca3af;
+  --color-text-inverse: #ffffff;
+
+  /* Layout */
+  --sidebar-width:      260px;
+  --sidebar-collapsed:  68px;
+  --header-height:      60px;
+  --content-max-width:  1200px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Typography */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.07);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.12);
+
+  /* Transition */
+  --transition: 200ms ease;
+  --transition-slow: 350ms ease;
+}
+
+html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  outline: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-light); }
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Page fade-in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
