@@ -1,7 +1,7 @@
 {
-  "name": "clinic-backend",
+  "name": "web-nha-khoa-backend-bctl",
   "version": "1.0.0",
-  "description": "Backend API cho hệ thống quản lý phòng khám",
+  "description": "Bai tap lon cuoi ky - He thong quan ly phong kham nha khoa chính chu",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
