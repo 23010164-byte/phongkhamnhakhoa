@@ -1,7 +1,8 @@
 {
-  "name": "clinic-frontend",
+  "name": "web-nha-khoa-frontend-bctl",
   "private": true,
   "version": "1.0.0",
+  "description": "Giao dien Bai tap lon cuoi ky - He thong quan ly phong kham nha khoa chính chu",
   "type": "module",
   "scripts": {
     "dev": "vite",
