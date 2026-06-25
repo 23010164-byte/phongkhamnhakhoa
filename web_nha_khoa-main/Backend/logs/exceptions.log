@@ -1,0 +1,95 @@
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+2026-06-08 07:55:43 error: [eval]:1
+require('dotenv').config(); const { Appointment } = require('./src/modules/appointment/appointment.model'); Appointment.findAll().then(res => console.log(JSON.stringify(res.map(a => ({date: a.appointment_date, doctor_profile_id: a.doctor_profile_id})), null, 2))).catch(console.error)
+                                                                                                                        ^
+
+TypeError: Cannot read properties of undefined (reading 'findAll')
+    at [eval]:1:121
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:446:12
+    at [eval]-wrapper:6:24
+    at runScriptInContext (node:internal/process/execution:444:60)
+    at evalFunction (node:internal/process/execution:279:30)
+    at evalTypeScript (node:internal/process/execution:291:3)
+    at node:internal/main/eval_string:74:3
+2026-06-17 14:43:26 error: node:internal/modules/cjs/loader:1386
+  throw err;
+  ^
+
+Error: Cannot find module './src/models'
+Require stack:
+- G:\Nha khoa\Backend\[eval]
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at [eval]:1:57
+    at runScriptInThisContext (node:internal/vm:209:10)

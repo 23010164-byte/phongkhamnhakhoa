@@ -1,0 +1,12 @@
+undefined
+2026-06-17 14:42:52 error: SequelizeEagerLoadingError: User is not associated to DoctorProfile!
+    at DoctorProfile._getIncludedAssociation (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:565:13)
+    at DoctorProfile._validateIncludedElement (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:502:53)
+    at G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at DoctorProfile._validateIncludedElements (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:417:39)
+    at DoctorProfile.findAll (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:1124:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DoctorProfile.findOne (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async DoctorProfile.findByPk (G:\Nha khoa\Backend\node_modules\sequelize\lib\model.js:1221:12)
+    at async Object.generateSlip (G:\Nha khoa\Backend\src\modules\salary\salary.service.js:226:27)
